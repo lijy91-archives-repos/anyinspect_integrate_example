@@ -1,4 +1,4 @@
-package org.leanflutter.examples.anyinspect_integrate_example;
+package dev.anyinspect.anyinspect_integrate_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 
