@@ -1,3 +1,4 @@
+import 'package:anyinspect/anyinspect.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:preference_list/preference_list.dart';
@@ -12,9 +13,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    super.initState();
+    AnyInspect.instance.assistiveBall.show(context);
+  }
+
   Widget _buildBody(BuildContext context) {
     return PreferenceList(
       children: <Widget>[
+        Builder(builder: (_) {
+          return Container();
+        }),
         PreferenceListSection(
           children: [
             PreferenceListItem(

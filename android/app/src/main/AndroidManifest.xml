@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dev.anyinspect.anyinspect_integrate_example">
+
+   <uses-permission android:name="android.permission.INTERNET" />
+
    <application
         android:label="anyinspect_integrate_example"
         android:icon="@mipmap/ic_launcher">
